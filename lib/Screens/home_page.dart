@@ -65,6 +65,7 @@ class _HomePageState extends State<HomePage> {
           if (snapshot.hasData == false) {
             return SizedBox();
           }
+
           _liveScoreList.clear();
           for (QueryDocumentSnapshot doc in snapshot.data!.docs) {
             LiveScoreModel liveScoreModel = LiveScoreModel.fromJson(
@@ -103,6 +104,24 @@ class _HomePageState extends State<HomePage> {
             },
           );
         },
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          LiveScoreModel liveScoreModel = LiveScoreModel(
+            title: "gervseng",
+            team1: "Germany",
+            team2: "England",
+            team1Score: 3,
+            team2Score: 2,
+            winnerTeam: "Germany",
+            isRunning: true,
+          );
+          db
+              .collection('football')
+              .doc(liveScoreModel.title)
+              .set(liveScoreModel.toJson());
+        },
+        child: Icon(Icons.add),
       ),
     );
   }
