@@ -11,6 +11,7 @@ Future<void> main() async {
   );
 
   await FcmService().init();
+  print(await FcmService().getFcmToken());
   runApp(const LiveScoreApp());
 }
 
