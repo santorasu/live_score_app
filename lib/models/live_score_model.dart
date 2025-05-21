@@ -38,4 +38,5 @@ class LiveScoreModel {
       'isRunning': isRunning
     };
   }
+
 }
