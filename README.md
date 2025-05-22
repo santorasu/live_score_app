@@ -1,16 +1,52 @@
-# geo_location
+# ⚽ Live Score App
 
-A new Flutter project.
+A real-time **Football Live Score App** built using **Flutter** and **Firebase**. This app fetches and displays live match scores using **Firestore** and integrates **Firebase Cloud Messaging (FCM)** to handle notifications. It is designed with a clean UI and utilizes `StreamBuilder` to reflect real-time updates instantly.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- 📡 **Live Updates** from Firestore.
+- 📲 **Push Notifications** using Firebase Cloud Messaging.
+- 🔄 Real-time data display using `StreamBuilder`.
+- ➕ Add new match data from the app.
+- 🟢 Indicator for live/finished matches.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+## 🛠️ Technologies Used
+
+- **Flutter** - UI Framework
+- **Firebase Firestore** - Real-time Database
+- **Firebase Messaging** - Push Notifications
+- **Firebase Core** - Base SDK
+
+---
+
+## 🧠 Structure
+
+lib/
+├── main.dart
+├── app.dart
+├── firebase_options.dart
+├── Screens/
+│ └── home_page.dart
+├── models/
+│ └── live_score_model.dart
+├── servive/
+│ └── fcm_service.dart
+
+
+
+---
+
+## 🔧 Getting Started
+
+### Prerequisites
+
+- Flutter SDK
+- Firebase CLI
+- Android Studio / VS Code
+
