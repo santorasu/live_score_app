@@ -25,22 +25,7 @@ A real-time **Football Live Score App** built using **Flutter** and **Firebase**
 
 ---
 
-## 🧠 Structure
 
-lib/
-├── main.dart
-├── app.dart
-├── firebase_options.dart
-├── Screens/
-│ └── home_page.dart
-├── models/
-│ └── live_score_model.dart
-├── servive/
-│ └── fcm_service.dart
-
-
-
----
 
 ## 🔧 Getting Started
 
